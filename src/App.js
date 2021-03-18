@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          반갑습니다 시윤231테스트
+          반갑습니다 시윤테스트
         </a>
       </header>
     </div>
