@@ -12,5 +12,13 @@
   script:
     - docker run -e CI=true a2/react echo "check"
 
-  after_success:
-    - echo "TEST SUCCESS"
+  deploy:
+    provider: elasticbeanstalk
+    region: "ap-northeast-2"
+    app: "docker-react-app"
+    env: "dockerreactapp-env"
+    bucket-name: "elasticbeanstalk-ap-northeast=2=069513091873"
+    bucket_path: "docker-react-app"
+    on:
+      branch: main
+      
