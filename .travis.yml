@@ -21,6 +21,6 @@
     bucket_path: "docker-react-app"
     on:
       branch: main
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_ACCESS_SECURITY_KEY
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_ACCESS_SECURITY_KEY
 
