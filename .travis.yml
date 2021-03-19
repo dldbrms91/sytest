@@ -15,7 +15,7 @@
   deploy:
     provider: elasticbeanstalk
     region: "ap-northeast-2"
-    app: "docker-react-app"
+    app: "sytest"
     env: "dockerreactapp-env"
     bucket-name: "elasticbeanstalk-ap-northeast-2-069513091873"
     bucket_path: "docker-react-app"
@@ -24,3 +24,4 @@
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_ACCESS_SECURITY_KEY
 
+    
