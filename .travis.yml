@@ -11,15 +11,14 @@
   
   script:
     - docker run -e CI=true a2/react echo "check"
-
-  deploy:
-    provider: elasticbeanstalk
-    region: "ap-northeast-2"
-    app: "sytest"
-    bucket-name: "elasticbeanstalk-ap-northeast-2-069513091873"
-    bucket_path: "docker-react-app"
-    on:
-      branch: main
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_ACCESS_SECURITY_KEY
-    
+#
+#  deploy:
+#    provider: elasticbeanstalk
+#    region: "ap-northeast-2"
+#    app: "sytest"
+#    bucket-name: "elasticbeanstalk-ap-northeast-2-069513091873"
+#    bucket_path: "docker-react-app"
+#    on:
+#      branch: main
+#    access_key_id: $AWS_ACCESS_KEY
+#    secret_access_key: $AWS_ACCESS_SECURITY_KEY
