@@ -5,12 +5,16 @@
   services:
     - docker
   
+  
   before_install:
     - echo "start create images"
     - docker build -t a2/react -f Dockerfile.dev .
   
   script:
-    - docker run -e CI=true a2/react echo "check"
+    - docker run -e CI=true a2/react npm run test -- --coverage
+
+  after_success:
+    - echo "TEST success"
 #
 #  deploy:
 #    provider: elasticbeanstalk
